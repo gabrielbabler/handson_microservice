@@ -36,3 +36,16 @@ uma pasta pensando que estava em outra.
 Um outro objetivo do GIT é permitir que desenvolvedores possam compartilhar seus projetos e trabalharem juntos de uma maneira fácil.
 
 ![image](https://user-images.githubusercontent.com/18057391/79080174-e803aa80-7ce9-11ea-8e2e-c639f81fa2e5.png)
+
+## Instalação
+
+### Windows:
+
+1. Faça o download do executável em: https://git-scm.com/download/win
+2. Execute o arquivo .exe seguindo o passo a passo (next, next, next, finish).
+
+### Linux (Ubuntu):
+
+Execute `sudo apt install git` no seu terminal.
+
+
