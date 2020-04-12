@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/18057391/79079622-a291ae00-7ce6-11ea-8ac2-8f4d72a43ad2.png)
 
-## Workshop Microservice and More
+## Workshop Hands-on: Microservices and more
 
 Aqui você encontrará todas as informações referentes ao Workshop Microservice and More.
 
