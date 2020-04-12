@@ -4,7 +4,15 @@
 
 ## Workshop Hands-on: Microservices and more
 
-Aqui você encontrará todas as informações referentes ao Workshop Microservice and More.
+Aqui você encontrará todas as informações referentes ao Workshop Hands-on: Microservices and more.
+
+O Workshop está devidido em 3 grandes assuntos, sendo eles:
+
+- GIT
+- Docker
+- Microservices
+
+Cada assunto tem sua página específica com o passo a passo para acompanhar o workshop.
 
 **Pra quem é esse material ?** 
 - **TODO MUNDO** que está afim em aprender sobre GIT, Docker e Microservice, independente do nível de conhecimento prévio.
