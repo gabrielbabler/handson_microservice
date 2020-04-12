@@ -16,7 +16,7 @@ esse livro é totalmente **gratuito**.
 Sistema que registra **as mudanças de um conjunto de arquivos ao longo do tempo**,
 para que você possa recuperar versões específicas mais tarde. 
 
-Você possa fazer usá-lo com praticamente **qualquer tipo de arquivo** em um computador
+Você possa usá-lo com praticamente **qualquer tipo de arquivo** em um computador
 
 ## O que o GIT quer resolver?
 
@@ -33,7 +33,6 @@ uma pasta pensando que estava em outra.
 
 ### Compartilhamento de código com vários desenvolvedores
 
-Um outro objetivo do GIT é permitir que desenvolvedores possam compartilhar seus projetos de uma maneira mais fácil que as
-ferramentas anteriores.
+Um outro objetivo do GIT é permitir que desenvolvedores possam compartilhar seus projetos e trabalharem juntos de uma maneira fácil.
 
 ![image](https://user-images.githubusercontent.com/18057391/79080174-e803aa80-7ce9-11ea-8e2e-c639f81fa2e5.png)
