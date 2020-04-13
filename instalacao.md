@@ -11,7 +11,7 @@
 
 ### Linux (Ubuntu):
 
-Execute `sudo apt install git` no seu terminal.
+Execute `sudo apt install git` no seu terminal
 
 ## Microservice
 
@@ -29,7 +29,7 @@ Execute `sudo apt install git` no seu terminal.
 
 ### Linux (Ubuntu):
 
-Execute: `sudo apt-get update` no seu terminal.
+Execute: `sudo apt-get update` no seu terminal
 
 #### JDK 8: 
 
@@ -39,11 +39,11 @@ Execute: `sudo apt install openjdk-8-jdk`
 
 #### Eclipse IDE: 
 
-Baixar arquivo do site. [Link](https://www.eclipse.org/downloads/).
+Baixar arquivo do site. [Link](https://www.eclipse.org/downloads/)
 
-Após download, executar: `tar xfz ~/Downloads/eclipse-inst-linux64.tar.gz`
+Após download, executar na pasta onde está o arquivo baixado: `tar xfz ~/Downloads/eclipse-inst-linux64.tar.gz`
 
-[referência](https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/).
+[referência](https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/)
 
 #### IntelliJ IDE:
 
@@ -59,32 +59,32 @@ Execute:
 
 #### Lombok -> Eclipse IDE:
 
-[Link](https://projectlombok.org/setup/eclipse).
+[Link](https://projectlombok.org/setup/eclipse)
 
 #### Lombok -> IntelliJ IDE:
 
-[Link](https://projectlombok.org/setup/intellij).
+[Link](https://projectlombok.org/setup/intellij)
 
 #### MAVEN:
 
 Execute: `sudo apt install maven`
 
-[referência](https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-18-04/).
+[referência](https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-18-04/)
 
 #### DBeaver:
 
-[Link](https://dbeaver.io/download/). 
+[Link](https://dbeaver.io/download/).
 
-Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele ir iniciar a instalação.
+Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele ir iniciar a instalação
 
 #### MySQL Workbench:
 
 [Link](https://dev.mysql.com/downloads/workbench/).
 
-Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele ir iniciar a instalação.
+Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele ir iniciar a instalação
 
 #### Postman:
 
-[Link](https://www.postman.com/downloads/).
+[Link](https://www.postman.com/downloads/)
 
-Após download, executar: `tar xfz ~/Downloads/Postman-linux-x64-7.13.0.tar.gz`
+Após download, executar na pasta onde está o arquivo baixado: `tar xfz ~/Downloads/Postman-linux-x64-7.13.0.tar.gz`
