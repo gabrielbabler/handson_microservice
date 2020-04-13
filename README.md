@@ -1,5 +1,4 @@
-| [Home](https://gabrielbabler.github.io/handson_microservice/) |  [Instalação](https://gabrielbabler.github.io/handson_microservice/instalacao) | [GIT]
-(https://gabrielbabler.github.io/handson_microservice/git) | [Docker](https://gabrielbabler.github.io/handson_microservice/docker) | [Microservice](https://gabrielbabler.github.io/handson_microservice/microservice)
+| [Home](https://gabrielbabler.github.io/handson_microservice/) |  [Instalação](https://gabrielbabler.github.io/handson_microservice/instalacao) | [GIT](https://gabrielbabler.github.io/handson_microservice/git) | [Docker](https://gabrielbabler.github.io/handson_microservice/docker) | [Microservice](https://gabrielbabler.github.io/handson_microservice/microservice)
 
 ![image](https://user-images.githubusercontent.com/18057391/79079622-a291ae00-7ce6-11ea-8ac2-8f4d72a43ad2.png)
 
