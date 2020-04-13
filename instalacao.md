@@ -7,7 +7,7 @@
 ### Windows:
 
 1. Faça o download do executável em: [https://git-scm.com/download/win](https://git-scm.com/download/win)
-2. Execute o arquivo .exe seguindo o passo a passo (next, next, next, finish).
+2. Execute o arquivo .exe seguindo o passo a passo (next, next, next, finish)
 
 ### Linux (Ubuntu):
 
@@ -17,15 +17,15 @@ Execute `sudo apt install git` no seu terminal
 
 ### Windows:
 
-- [JDK 8](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
-- [Eclipse IDE](https://www.eclipse.org/downloads/).
-- [IntelliJ IDE](https://www.jetbrains.com/idea/download/#section=linux).
-- [Lombok -> Eclipse IDE](https://projectlombok.org/setup/eclipse).
-- [Lombok -> IntelliJ IDE](https://projectlombok.org/setup/intellij).
-- [MAVEN](https://maven.apache.org/download.cgi).
-- [DBeaver](https://dbeaver.io/download/).
-- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
-- [Postman](https://www.postman.com/downloads/).
+- [JDK 8](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)
+- [Eclipse IDE](https://www.eclipse.org/downloads/)
+- [IntelliJ IDE](https://www.jetbrains.com/idea/download/#section=linux)
+- [Lombok -> Eclipse IDE](https://projectlombok.org/setup/eclipse)
+- [Lombok -> IntelliJ IDE](https://projectlombok.org/setup/intellij)
+- [MAVEN](https://maven.apache.org/download.cgi)
+- [DBeaver](https://dbeaver.io/download/)
+- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+- [Postman](https://www.postman.com/downloads/)
 
 ### Linux (Ubuntu):
 
@@ -73,13 +73,13 @@ Execute: `sudo apt install maven`
 
 #### DBeaver:
 
-[Link](https://dbeaver.io/download/).
+[Link](https://dbeaver.io/download/)
 
 Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele ir iniciar a instalação
 
 #### MySQL Workbench:
 
-[Link](https://dev.mysql.com/downloads/workbench/).
+[Link](https://dev.mysql.com/downloads/workbench/)
 
 Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele ir iniciar a instalação
 
