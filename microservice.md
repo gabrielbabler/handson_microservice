@@ -104,13 +104,13 @@ Execute: `sudo apt install maven`
 
 [Link](https://dbeaver.io/download/). 
 
-Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele ir iniciar a instalação.
+Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele irá iniciar a instalação.
 
 #### MySQL Workbench:
 
 [Link](https://dev.mysql.com/downloads/workbench/).
 
-Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele ir iniciar a instalação.
+Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele irá iniciar a instalação.
 
 #### Postman:
 
