@@ -101,11 +101,9 @@ Para salvar a mensagem, execute `CTRL + O` e depois aperte `ENTER`. Pronto, agor
 
 Saia do `GNU nano 2.9.3` utilizando `CTRL + X`.
 
-** Pronto, criamos nosso primeiro `commit` que por padrão faz parte da `branch master`. Podemos visualizar nossa linha do tempo através do comando abaixo**:
+**Pronto, criamos nosso primeiro `commit` que por padrão faz parte da `branch master`. Podemos visualizar nossa linha do tempo através do comando abaixo**:
 ```
 git log
 ```
------------------------ ------------------------------------
-![icons8-info-popup-40](https://user-images.githubusercontent.com/18057391/79183133-fa174300-7de6-11ea-882f-4e98d21c75f9.png)\
-Você contemplou o fluxo mais comum que ocorre no `GIT`. 80% do caso de uso dele é esse processo sendo repetido. 
-----------------------------------------------------------------
+
+> ![s](https://user-images.githubusercontent.com/18057391/79183133-fa174300-7de6-11ea-882f-4e98d21c75f9.png) Você contemplou o fluxo mais comum que ocorre no `GIT`. 80% do caso de uso dele é esse processo sendo repetido.
