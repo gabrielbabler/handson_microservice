@@ -37,6 +37,13 @@ Um outro objetivo do GIT é permitir que desenvolvedores possam compartilhar seu
 
 ![image](https://user-images.githubusercontent.com/18057391/79080174-e803aa80-7ce9-11ea-8e2e-c639f81fa2e5.png)
 
+## Configurando git pela primeira vez
+
+```
+git config --global user.name "change-me"
+git config --global user.email "change-me"
+```
+
 ## Comandos utilizados no Workshop
 
 Crie uma pasta chamada `tcc` e entre nessa pasta:
