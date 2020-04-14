@@ -114,3 +114,26 @@ git log
 ```
 
 > ![s](https://user-images.githubusercontent.com/18057391/79183133-fa174300-7de6-11ea-882f-4e98d21c75f9.png) Você contemplou o fluxo mais comum que ocorre no `GIT`. 80% do caso de uso dele é esse processo sendo repetido.
+
+## Trabalhando com mais pessoas (Github)
+
+Crie uma [conta no Github](http://github.com/) caso ainda no tão tenha uma, é super intuitivo.
+![image](https://user-images.githubusercontent.com/18057391/79184885-cbe83200-7deb-11ea-869f-b7c9611e7a75.png)
+
+Forke o repositório [contribuindo-com-git](https://github.com/bartier/contribuindo-com-git)
+![image](https://user-images.githubusercontent.com/18057391/79184983-11a4fa80-7dec-11ea-81c9-c15f9fc3a2b0.png)
+
+Será criado um repositório idêntico ao original na sua conta. Agora você deve obter uma **cópia local** desse repositório remoto, para tanto, utilize o comando abaixo:
+```
+git clone https://github.com/<SEU_USUARIO_NO_GITHUB>/contribuindo-com-git.git
+```
+
+Uma pasta chamada `contribuindo-com-git` será criada no diretório em que você executou o comando acima. Acesse a pasta e crie uma nova branch chamada `proposta-de-alteracao`:
+```
+cd contribuindo-com-git
+git checkout -b proposta-de-alteracao # A flag -b automaticamente move você para a branch criada
+```
+
+O próximo passo agora é realizarmos as alterações que queremos e `commitar` quanta vezes acharmos necessário.
+
+Após entendermos que nossa trabalho está pronto, iremos propor ao `mantenedor do projeto original` a nossa alteração que está na branch `proposta-de-alteracao`.
