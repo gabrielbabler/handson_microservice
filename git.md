@@ -39,9 +39,10 @@ Um outro objetivo do GIT é permitir que desenvolvedores possam compartilhar seu
 
 ## Comandos utilizados no Workshop
 
-Crie uma pasta chamada `tcc` e entra nela:
+Crie uma pasta chamada `tcc` e entre nessa pasta:
 ```
-mkdir tcc && cd tcc
+mkdir tcc
+cd tcc
 ```
 
 Inicialize um repositório GIT no diretório atual:
@@ -60,7 +61,7 @@ Após realizar as alterações desejadas, aperte a tecla `ESC` e depois `SHIFT +
 
 Podemos visualizar a todo o momento como o GIT está enxergando os arquivos utilizando o comando abaixo:
 ```
-git init
+git status
 ```
 
 Vamos adicionar alguns arquivos na nossa `staging area`, para tanto, execute o comando abaixo:
@@ -99,3 +100,12 @@ Será aberto o editor padrão que o GIT foi configurado, muito provavelmente o `
 Para salvar a mensagem, execute `CTRL + O` e depois aperte `ENTER`. Pronto, agora você salvou o arquivo `.git/COMMIT_EDITMSG`, um arquivo temporário que o `GIT` utiliza para obter a descrição do commit no processo de criação.
 
 Saia do `GNU nano 2.9.3` utilizando `CTRL + X`.
+
+** Pronto, criamos nosso primeiro `commit` que por padrão faz parte da `branch master`. Podemos visualizar nossa linha do tempo através do comando abaixo**:
+```
+git log
+```
+----------------------- ------------------------------------
+![icons8-info-popup-40](https://user-images.githubusercontent.com/18057391/79183133-fa174300-7de6-11ea-882f-4e98d21c75f9.png)\
+Você contemplou o fluxo mais comum que ocorre no `GIT`. 80% do caso de uso dele é esse processo sendo repetido. 
+----------------------------------------------------------------
