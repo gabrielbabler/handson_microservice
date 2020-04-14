@@ -37,4 +37,65 @@ Um outro objetivo do GIT é permitir que desenvolvedores possam compartilhar seu
 
 ![image](https://user-images.githubusercontent.com/18057391/79080174-e803aa80-7ce9-11ea-8e2e-c639f81fa2e5.png)
 
+## Comandos utilizados no Workshop
 
+Crie uma pasta chamada `tcc` e entra nela:
+```
+mkdir tcc && cd tcc
+```
+
+Inicialize um repositório GIT no diretório atual:
+```
+git init
+```
+
+Crie 3 arquivos em brancos:
+```
+touch arquivo1.txt arquivo2.txt arquivo3.txt
+```
+
+Adicione algum texto nos arquivos criados com seu editor favorito. Caso deseje editar na linha de comando o arquivo, utilize o comando `vim <nome_do_arquivo>` e aperta a tecla `I`. 
+
+Após realizar as alterações desejadas, aperte a tecla `ESC` e depois `SHIFT + :"` e escreva `wq`.
+
+Podemos visualizar a todo o momento como o GIT está enxergando os arquivos utilizando o comando abaixo:
+```
+git init
+```
+
+Vamos adicionar alguns arquivos na nossa `staging area`, para tanto, execute o comando abaixo:
+```
+git add arquivo1.txt arquivo2.txt
+```
+
+Observe que o GIT agora considera o `arquivo 1.txt` e `arquivo2.txt` alterações prontas para serem `commitadas`, portanto, estão na nossa `staging area`:
+```
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   arquivo1.txt
+	new file:   arquivo2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	arquivo3.txt
+
+```
+
+Para criar um `commit` de fato e registrar o estado atual dos arquivos que estão na `staging area`, devemos utilizar o comando abaixo:
+```
+git commit
+```
+
+Será aberto o editor padrão que o GIT foi configurado, muito provavelmente o `GNU nano 2.9.3`. Nele iremos dar um título para descrever as nossas alterações, e se desejarmos, uma breve descrição.
+![image](https://user-images.githubusercontent.com/18057391/79182194-9db32400-7de4-11ea-811d-87e6af2a339d.png)
+
+Para salvar a mensagem, execute `CTRL + O` e depois aperte `ENTER`. Pronto, agora você salvou o arquivo `.git/COMMIT_EDITMSG`, um arquivo temporário que o `GIT` utiliza para obter a descrição do commit no processo de criação.
+
+Saia do `GNU nano 2.9.3` utilizando `CTRL + X`.
