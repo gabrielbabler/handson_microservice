@@ -136,8 +136,48 @@ git checkout -b proposta-de-alteracao
 # A flag -b do comando acima automaticamente move você para a branch criada
 ```
 
-O próximo passo agora é realizarmos as alterações que queremos e `commitar` quanta vezes acharmos necessário. Para fins de simplificação, crie um `arquivo novo` com o nome que desejar (por exemplo, seu nome) e adicione algum conteúdo (uma citação, poema, etc). 
+O próximo passo agora é realizarmos as alterações que queremos e `commitar` quanta vezes acharmos necessário. 
 
-> ![s](https://user-images.githubusercontent.com/18057391/79183133-fa174300-7de6-11ea-882f-4e98d21c75f9.png) **Como o objetivo é mais entender o  `processo em si de contribuição`, não estamos levando em consideração o valor do conteúdo que estamos criando. Em um repositório de um projeto de código fonte isso seria diferente, já que teríamos que implementar coisas que façam sentido e permitam o projeto ser executado.
+Para fins de simplificação, crie um `arquivo novo` com o nome que desejar (por exemplo, seu prório SEU_NOME.txt) e adicione algum conteúdo (uma citação, poema, etc) e crie um commit `referente a essa criação de arquivo`.
 
-Após entendermos que nossa trabalho está pronto, iremos propor ao `mantenedor do projeto original` a nossa alteração que está na branch `proposta-de-alteracao`.
+```
+# Cria o arquivo SEU_NOME.txt com o conteúdo abaixo
+echo "Altere esse conteúdo para algo que desejar" > SEU_NOME.txt
+
+# Adiciona SEU_NOME.txt na staging area
+git add SEU_NOME.txt
+
+# Reúne as alterações da staging area e com base nela cria um commit
+# Ao invés de entrarmos no editor, estamos 'pulando esse passo' e dando uma mensagem descritiva do commit pela flag -m
+git commit -m "Adiciona o arquivo SEU_NOME.txt"
+```
+
+> ![s](https://user-images.githubusercontent.com/18057391/79183133-fa174300-7de6-11ea-882f-4e98d21c75f9.png) Como o objetivo é mais `entender o processo em si de contribuição`, não estamos levando em consideração o **valor do conteúdo que estamos criando**. Em um repositório de um projeto de código fonte isso seria diferente, já que **teríamos que implementar coisas que façam sentido e permitam o projeto ser executado**.
+
+Após entendermos que nossa trabalho está pronto, iremos propor ao `mantenedor do projeto original` a nossa alteração que está na branch `proposta-de-alteracao` com o commit criado anteriormente.
+
+Para tanto, envie suas alterações locais para o seu repositório remoto:
+
+```
+# A origin é a referência para seu projeto remoto no Github
+# proposta-de-alteracao é a referência da sua branch local
+
+git push origin proposta-de-alteracao
+```
+
+Após o comando acima ser executado, voc deverá ir ao seu repositório `forkado` pela página na Web.
+
+Podemos verificar que existe a opção de criarmos um `Pull Request` pela própria interface do GitHub. O próprio GitHub sugere que você crie um PR (Pull Request):
+![image](https://user-images.githubusercontent.com/18057391/79187069-b4ac4300-7df1-11ea-8b1a-1206791af542.png)
+Clique em `Compare & pull request` para iniciar a escrita da sua proposta de alteração (Pull Request).
+
+Ao clicar será exibido uma página como a seguir pedindo para que seja dado um título e uma descrição do seu Pull Request.
+
+Nesse passo é importante convencer quem irá revisar a Pull Request do porque ela deve ser aceita. A imagem abaixo exemplifica um preenchimento de um Pull Request. 
+![image](https://user-images.githubusercontent.com/18057391/79187448-a27ed480-7df2-11ea-88de-708cc873a005.png)
+
+![image](https://user-images.githubusercontent.com/18057391/79187647-3b155480-7df3-11ea-89eb-7c36832d04fb.png)
+A leitura do componente destacado acima é da direita para a esquerda:
+
+Está sendo criado uma proposta de incorporar as alteraçes na branch `proposta-de-alteracao` para a branch `master`. No seu caso, ao invés de `master`, deverá aparecer algo como abaixo, indicando que a proposta será enviada ao projeto original que você gerou a cópia.
+![image](https://user-images.githubusercontent.com/18057391/79187801-a95a1700-7df3-11ea-970e-f4f83d33775a.png)
