@@ -117,7 +117,7 @@ git log
 
 ## Trabalhando com mais pessoas (Github)
 
-Crie uma [conta no Github](http://github.com/) caso ainda no tão tenha uma, é super intuitivo.
+Crie uma [conta no Github](http://github.com/) caso ainda não tenha uma, é super intuitivo.
 ![image](https://user-images.githubusercontent.com/18057391/79184885-cbe83200-7deb-11ea-869f-b7c9611e7a75.png)
 
 Forke o repositório [contribuindo-com-git](https://github.com/bartier/contribuindo-com-git)
@@ -165,7 +165,7 @@ Para tanto, envie suas alterações locais para o seu repositório remoto:
 git push origin proposta-de-alteracao
 ```
 
-Após o comando acima ser executado, voc deverá ir ao seu repositório `forkado` pela página na Web.
+Após o comando acima ser executado, você deverá ir ao seu repositório `forkado` pela página na Web.
 
 Podemos verificar que existe a opção de criarmos um `Pull Request` pela própria interface do GitHub. O próprio GitHub sugere que você crie um PR (Pull Request):
 ![image](https://user-images.githubusercontent.com/18057391/79187069-b4ac4300-7df1-11ea-8b1a-1206791af542.png)
@@ -181,3 +181,13 @@ A leitura do componente destacado acima é da direita para a esquerda:
 
 Está sendo criado uma proposta de incorporar as alteraçes na branch `proposta-de-alteracao` para a branch `master`. No seu caso, ao invés de `master`, deverá aparecer algo como abaixo, indicando que a proposta será enviada ao projeto original que você gerou a cópia.
 ![image](https://user-images.githubusercontent.com/18057391/79187801-a95a1700-7df3-11ea-970e-f4f83d33775a.png)
+
+Clique para `criar o Pull Request` e pronto! Agora o trabalho é todo do `mantenedor do projeto` de revisar sua alteração e ir discutindo se elas fazem sentido ou não. Ele poderá realizar algumas refatorações no seu código, para isso basta você realizar novos `commits` na sua branch local `proposta-de-alteracao` e atualizá-la no seu `repositório remoto`.
+
+```
+git add <arquivos_alterados>
+git push origin proposta-de-alteracao
+```
+
+Exemplo de Pull Request criado:
+![image](https://user-images.githubusercontent.com/18057391/79188104-854b0580-7df4-11ea-8a7c-db902108697e.png)
