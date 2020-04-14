@@ -131,9 +131,13 @@ git clone https://github.com/<SEU_USUARIO_NO_GITHUB>/contribuindo-com-git.git
 Uma pasta chamada `contribuindo-com-git` será criada no diretório em que você executou o comando acima. Acesse a pasta e crie uma nova branch chamada `proposta-de-alteracao`:
 ```
 cd contribuindo-com-git
-git checkout -b proposta-de-alteracao # A flag -b automaticamente move você para a branch criada
+git checkout -b proposta-de-alteracao
+
+# A flag -b do comando acima automaticamente move você para a branch criada
 ```
 
-O próximo passo agora é realizarmos as alterações que queremos e `commitar` quanta vezes acharmos necessário.
+O próximo passo agora é realizarmos as alterações que queremos e `commitar` quanta vezes acharmos necessário. Para fins de simplificação, crie um `arquivo novo` com o nome que desejar (por exemplo, seu nome) e adicione algum conteúdo (uma citação, poema, etc). 
+
+> ![s](https://user-images.githubusercontent.com/18057391/79183133-fa174300-7de6-11ea-882f-4e98d21c75f9.png) **Como o objetivo é mais entender o  `processo em si de contribuição`, não estamos levando em consideração o valor do conteúdo que estamos criando. Em um repositório de um projeto de código fonte isso seria diferente, já que teríamos que implementar coisas que façam sentido e permitam o projeto ser executado.
 
 Após entendermos que nossa trabalho está pronto, iremos propor ao `mantenedor do projeto original` a nossa alteração que está na branch `proposta-de-alteracao`.
