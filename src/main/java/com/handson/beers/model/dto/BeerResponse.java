@@ -1,4 +1,4 @@
-package com.handson.beers.request;
+package com.handson.beers.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BeerRequest {
-
-	private String name;
-	private Double price;
+public class BeerResponse {
 
 }

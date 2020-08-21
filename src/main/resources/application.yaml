@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/beers
+    username: root
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
