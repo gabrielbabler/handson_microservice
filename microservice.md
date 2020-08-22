@@ -20,11 +20,11 @@ Trata-se de um componente indispensável para a otimização do desenvolvimento 
 
 ## O que iremos desenvolver?
 
-O objetivo é o desenvolvimento de um CRUD (Create, Read, Update and Delete) de Cervejas.
+O objetivo é o desenvolvimento de um C.R.U.D. (Create, Read, Update and Delete) de Cervejas.
 
 ## TO-DO's:
 
-Criação dos endpoint's:
+Criação dos recursos:
  - GET /beers
  - GET /beers/{beerId}
  - POST /beers
@@ -35,89 +35,19 @@ Criação dos endpoint's:
 Utilizamos GET para fazer consultas;
 Utilizamos POST para inserir novos dados;
 Utilizamos PUT para atualizar dados já existentes;
+Utilizamos PATCH para atualizar parcialmente um dado já existente;
 Utilizamos DELETE para deleter um dado já existente.
 
 ## O que precisaremos?
 
 - JDK 8;
-- Eclipse/IntelliJ; (Obs.: O instrutor irá utilizar Eclipse)
+- Eclipse/IntelliJ; (Recomendo o uso do **IntelliJ** - Instrutor irá utilizar IntelliJ)
 - Lombok;
 - MAVEN;
-- DBeaver/MySQL Workbench; (Obs.: O instrutor irá utilizar DBeaver)
+- DBeaver/MySQL Workbench; (Obs.: O instrutor irá utilizar **DBeaver**)
 - POSTMAN.
 
-## Instalação
+## Para detalhes de instalação, [clique aqui](https://gabrielbabler.github.io/handson_microservice/instalacao)
 
-### Windows:
+## Documentação
 
-- [JDK 8](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
-- [Eclipse IDE](https://www.eclipse.org/downloads/).
-- [IntelliJ IDE](https://www.jetbrains.com/idea/download/#section=linux).
-- [Lombok -> Eclipse IDE](https://projectlombok.org/setup/eclipse).
-- [Lombok -> IntelliJ IDE](https://projectlombok.org/setup/intellij).
-- [MAVEN](https://maven.apache.org/download.cgi).
-- [DBeaver](https://dbeaver.io/download/).
-- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
-- [Postman](https://www.postman.com/downloads/).
-
-### Linux (Ubuntu):
-
-Execute: `sudo apt-get update` no seu terminal.
-
-#### JDK 8: 
-
-Execute: `sudo apt install openjdk-8-jdk`
-
-[referência](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04)
-
-#### Eclipse IDE: 
-
-Baixar arquivo do site. [Link](https://www.eclipse.org/downloads/).
-
-Após download, executar: `tar xfz ~/Downloads/eclipse-inst-linux64.tar.gz`
-
-[referência](https://websiteforstudents.com/how-to-install-eclipse-oxygen-ide-on-ubuntu-167-04-17-10-18-04/).
-
-#### IntelliJ IDE:
-
-Execute: 
-
-`sudo add-apt-repository ppa:mmk2410/intellij-idea-community`
-
-`sudo apt update`
-
-`sudo apt install intellij-idea-community`
-
-[referência](https://itsfoss.com/install-intellij-ubuntu-linux/)
-
-#### Lombok -> Eclipse IDE:
-
-[Link](https://projectlombok.org/setup/eclipse).
-
-#### Lombok -> IntelliJ IDE:
-
-[Link](https://projectlombok.org/setup/intellij).
-
-#### MAVEN:
-
-Execute: `sudo apt install maven`
-
-[referência](https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-18-04/).
-
-#### DBeaver:
-
-[Link](https://dbeaver.io/download/). 
-
-Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele irá iniciar a instalação.
-
-#### MySQL Workbench:
-
-[Link](https://dev.mysql.com/downloads/workbench/).
-
-Faça o download da opção Debian, e após finalizado dar 2 cliques no arquivo que ele irá iniciar a instalação.
-
-#### Postman:
-
-[Link](https://www.postman.com/downloads/).
-
-Após download, executar: `tar xfz ~/Downloads/Postman-linux-x64-7.13.0.tar.gz`
