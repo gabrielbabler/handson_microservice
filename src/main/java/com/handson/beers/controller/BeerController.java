@@ -16,6 +16,12 @@ public class BeerController {
      */
 
     /**
+     * Verbo HTTP: GET
+     * Nome do recurso: /beers/{beer-id}
+     * Responsabilidade: Trazer uma determinada cerveja através do seu ID.
+     */
+
+    /**
      * Verbo HTTP: POST
      * Nome do recurso: /beers
      * Responsabilidade: Inserir uma nova cerveja no banco de dados.
