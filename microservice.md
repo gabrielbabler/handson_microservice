@@ -32,11 +32,11 @@ Criação dos recursos:
  - DELETE /beers/{beerId}
  
 ### Verbos HTTP
-Utilizamos GET para fazer consultas;
-Utilizamos POST para inserir novos dados;
-Utilizamos PUT para atualizar dados já existentes;
-Utilizamos PATCH para atualizar parcialmente um dado já existente;
-Utilizamos DELETE para deleter um dado já existente.
+- Utilizamos **GET** para fazer consultas;
+- Utilizamos **POST** para inserir novos dados;
+- Utilizamos **PUT** para atualizar dados já existentes;
+- Utilizamos **PATCH** para atualizar parcialmente um dado já existente;
+- Utilizamos **DELETE** para deleter um dado já existente.
 
 ## O que precisaremos?
 
