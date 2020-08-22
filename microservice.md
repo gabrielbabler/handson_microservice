@@ -4,9 +4,9 @@
 ![image](https://user-images.githubusercontent.com/20668748/79121059-ca2a5a00-7d6a-11ea-894b-4a5eaca061c8.png)
 
 
-## O que é microsserviço?
+## O que é microserviço?
 
-Os microsserviços são uma arquitetura e uma abordagem para escrever programas de software. Com eles, as aplicações são desmembradas em componentes mínimos e independentes. 
+Os microserviços são uma arquitetura e uma abordagem para escrever programas de software. Com eles, as aplicações são desmembradas em componentes mínimos e independentes. 
 
 Diferentemente da abordagem tradicional monolítica em que toda a aplicação é criada como um único bloco, os microsserviços são componentes separados que trabalham juntos para realizar as mesmas tarefas.
 
