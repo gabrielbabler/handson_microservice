@@ -1,6 +1,6 @@
 | [Home](/handson_microservice) | [Instalação](/handson_microservice/instalacao) | [GIT](/handson_microservice/git) | [Docker](/handson_microservice/docker) | [Microservice](/handson_microservice/microservice)
 
-![image](https://user-images.githubusercontent.com/20668748/90948106-92ff4000-e411-11ea-878e-d31ac8c36da7.png)
+![image](https://user-images.githubusercontent.com/18057391/90987419-64907a80-e561-11ea-8110-fd996a7aa981.PNG)
 
 ## Workshop Hands-on: Microserviços e Tecnologias do Mercado
 

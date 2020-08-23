@@ -1,11 +1,10 @@
 | [Home](/handson_microservice) | [Instalação](/handson_microservice/instalacao) | [GIT](/handson_microservice/git) | [Docker](/handson_microservice/docker) | [Microservice](/handson_microservice/microservice)
 
-<h1 align="center">
-  <img src="https://user-images.githubusercontent.com/18057391/90987230-b20be800-e55f-11ea-9b60-01f8c658f3b8.PNG" alt="Git" width="800px" />
-</h1>
-
-
 # Instalação
+
+<h1 align="center">
+  <img src="https://user-images.githubusercontent.com/18057391/90987285-2777b880-e560-11ea-988f-9e25d0d486d6.PNG" alt="instalacao" width="800px" />
+</h1>
 
 Nesta página você encontra todas as instruções  necessárias para as instalação das ferramentas que serão utilizadas
 no workshop.
