@@ -2,6 +2,10 @@
 
 # Instalação / Docker / Windows
 
+<h1 align="center">
+  <img src="https://user-images.githubusercontent.com/18057391/90987285-2777b880-e560-11ea-988f-9e25d0d486d6.PNG" alt="instalacao" width="800px" />
+</h1>
+
 Para utilizar o docker no no Windows, é necessário que o sistema operacional seja a versão Professional ou Enterprise.
 
 Sendo assim basta baixar e instalar o docker Desktop, encontrado no link a seguir:

@@ -2,6 +2,10 @@
 
 # Instalação / Docker / Ubuntu
 
+<h1 align="center">
+  <img src="https://user-images.githubusercontent.com/18057391/90987285-2777b880-e560-11ea-988f-9e25d0d486d6.PNG" alt="instalacao" width="800px" />
+</h1>
+
 Para o Linux, será necessário instalar o docker Engine e o docker-compose
 
 Para instalar o docker-engine, utilize os seguintes comandos
