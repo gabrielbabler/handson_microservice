@@ -1,0 +1,164 @@
+swagger: '2.0'
+info:
+  description: Swagger desenvolvido para o workshop hands-on - microservice
+  version: 1.0.0
+  title: Beers API
+  termsOfService: 'http://swagger.io/terms/'
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host: localhost:8080
+basePath: /api
+tags:
+  - name: Beers
+    description: Domínio relacionado a beers.
+schemes:
+  - https
+  - http
+paths:
+  /beers:
+    get:
+      tags:
+        - Beers
+      summary: Trazer todos os registros de cervejas.
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/BeerResponse'
+    post:
+      tags:
+        - Beers
+      summary: Incluir nova cerveja na base de dados.
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: body
+          in: body
+          description: Beer request
+          required: true
+          schema:
+            $ref: '#/definitions/BeerRequest'
+      responses:
+        '201':
+          description: Created
+  '/beers/{beer-id}':
+    put:
+      tags:
+        - Beers
+      summary: Atualizar uma cerveja existente na base de dados.
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: beer-id
+          in: path
+          description: Identificador da cerveja.
+          required: true
+          type: string
+        - name: body
+          in: body
+          description: Beer request
+          required: true
+          schema:
+            $ref: '#/definitions/BeerRequest'
+      responses:
+        '204':
+          description: No Content
+    patch:
+      tags:
+        - Beers
+      summary: Atualizar parcialmente uma cerveja existente na base de dados.
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: beer-id
+          in: path
+          description: Identificador da cerveja.
+          required: true
+          type: string
+        - name: body
+          in: body
+          description: Beer request
+          required: true
+          schema:
+            $ref: '#/definitions/BeerRequest'
+      responses:
+        '204':
+          description: No Content
+    delete:
+      tags:
+        - Beers
+      summary: Atualizar uma cerveja existente na base de dados.
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: beer-id
+          in: path
+          description: Identificador da cerveja.
+          required: true
+          type: string
+      responses:
+        '204':
+          description: No Content
+definitions:
+  BeerResponse:
+    properties: 
+      id: 
+        type: "number"
+        example: 1
+      name: 
+        type: "string"
+        example: "Skoll"
+      price: 
+        type: "number"
+        example: 4.25
+      description: 
+        type: "string"
+        example: "A vida manda quadrado, você devolve redondo."
+      alcoholByVolume: 
+        type: "number"
+        example: 2.1
+      type: 
+        type: "string"
+        example: "Lager"
+    type: "object"
+  BeerRequest:
+    properties: 
+      name: 
+        type: "string"
+        example: "Skoll"
+      price: 
+        type: "number"
+        example: 4.25
+      description: 
+        type: "string"
+        example: "A vida manda quadrado, você devolve redondo."
+      alcoholByVolume: 
+        type: "number"
+        example: 2.1
+      type: 
+        type: "string"
+        example: "Lager"
+
+externalDocs:
+  description: Find out more about Swagger
+  url: 'http://swagger.io'
