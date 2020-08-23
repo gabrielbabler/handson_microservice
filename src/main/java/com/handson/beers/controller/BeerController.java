@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping()
+@RequestMapping("")
 @RequiredArgsConstructor
 public class BeerController {
-
     /**
      * Verbo HTTP: GET
      * Nome do recurso: /beers

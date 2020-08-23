@@ -17,12 +17,10 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table()
+@Table(name = "beers")
 public class BeerEntity {
-	
 	@Id														//Avisando que esta variável é a Primary Key (chave-primária) da tabela
 	@Column(name = "id")    								//Referenciando qual a coluna da tabela
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 	//ID auto-increment, assim não precisamos enviar o campo ID quando salvar uma nova entrada no banco.
 	private Integer id;
-	
 }

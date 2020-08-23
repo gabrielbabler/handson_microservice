@@ -1,5 +1,6 @@
 package com.handson.beers.exception;
 
+import com.handson.beers.model.dto.ErrorResponse;
 import org.springframework.http.HttpStatus;
 
 public abstract class RestException extends RuntimeException {
@@ -8,12 +9,32 @@ public abstract class RestException extends RuntimeException {
 
     public abstract HttpStatus getStatus();
 
+    public RestException() {
+        super();
+    }
+
+    public RestException(String message) {
+        super(message);
+    }
+
     /**
-     * If an exception has a response body, it must override this method.
+     * If an exception has a properties mapped response body code and message, it must override this method. If it has a runtime customized response
+     * body, override this method {@link RestException#getResponseBody() getResponseBody}.
      * 
      * @return response body code
      */
-    public Object getBody() {
+    public String getResponseBodyCode() {
         return null;
     }
+
+    /**
+     * If an exception has a runtime customized response body, it must override this method. If it has a properties mapped response body code and
+     * message, override the method {@link RestException#getResponseBodyCode() getResponseBodyCode}.
+     * 
+     * @return response body
+     */
+    public ErrorResponse getResponseBody() {
+        return null;
+    }
+
 }

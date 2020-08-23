@@ -5,6 +5,7 @@ import com.handson.beers.exception.RestException;
 import com.handson.beers.model.dto.ErrorResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.validator.internal.engine.path.PathImpl;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpStatus;
@@ -21,8 +22,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
-import java.util.Arrays;
+import javax.validation.ConstraintViolationException;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -46,7 +48,7 @@ public class ControllerAdvice {
             JsonMappingException cause = (JsonMappingException) e.getCause();
             String field = cause.getPathReference().split("\\[\"")[1].replace("\"]", "");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                    .body(Arrays.asList(ErrorResponse.builder()
+                    .body(Collections.singletonList(ErrorResponse.builder()
                             .code("400.001")
                             .message(getMessage("400.001", field))
                             .build()));
@@ -55,9 +57,18 @@ public class ControllerAdvice {
     }
 
     @ExceptionHandler(MissingServletRequestParameterException.class)
-    public ResponseEntity<List<ErrorResponse>> missingServletRequestParameterException(
-            final MissingServletRequestParameterException e) {
+    public ResponseEntity<List<ErrorResponse>> missingServletRequestParameterException(final MissingServletRequestParameterException e) {
         return defaultBadRequestError();
+    }
+
+    @ExceptionHandler(ConstraintViolationException.class)
+    public ResponseEntity<List<ErrorResponse>> handleConstraintViolationException(final ConstraintViolationException cve) {
+        List<ErrorResponse> errors = cve.getConstraintViolations().stream()
+                .map(constraint -> new ErrorResponse(constraint.getMessageTemplate(),
+                        getMessage(constraint.getMessageTemplate(),
+                                ((PathImpl) constraint.getPropertyPath()).getLeafNode().getName())))
+                .collect(Collectors.toList());
+        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -77,10 +88,15 @@ public class ControllerAdvice {
         return new ResponseEntity<>(messageErrors, HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<Object> handleException(Exception exception) {
+        log.error(exception.getMessage(), exception);
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+    }
+
     @ExceptionHandler(MethodArgumentTypeMismatchException.class)
-    public ResponseEntity<List<ErrorResponse>> methodArgumentTypeMismatchException(
-            final MethodArgumentTypeMismatchException e) {
-        return new ResponseEntity<>(Arrays.asList(ErrorResponse.builder()
+    public ResponseEntity<List<ErrorResponse>> methodArgumentTypeMismatchException(final MethodArgumentTypeMismatchException e) {
+        return new ResponseEntity<>(Collections.singletonList(ErrorResponse.builder()
                 .code("400.001")
                 .message(getMessage("400.001", e.getName())).build()), HttpStatus.BAD_REQUEST);
     }
@@ -88,18 +104,23 @@ public class ControllerAdvice {
     @ExceptionHandler(RestException.class)
     public ResponseEntity<Object> handleRestException(RestException restException) {
         log.error(restException.getMessage(), restException);
-        return ResponseEntity.status(restException.getStatus()).body(restException.getBody());
-    }
-
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<Object> handleException(Exception exception) {
-        log.error(exception.getMessage(), exception);
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        if (restException.getResponseBodyCode() != null) {
+            return ResponseEntity.status(restException.getStatus())
+                    .body(ErrorResponse.builder()
+                            .code(restException.getResponseBodyCode())
+                            .message(getMessage(restException.getResponseBodyCode()))
+                            .build());
+        }
+        if (restException.getResponseBody() != null) {
+            return ResponseEntity.status(restException.getStatus())
+                    .body(restException.getResponseBody());
+        }
+        return ResponseEntity.status(restException.getStatus()).build();
     }
 
     private ResponseEntity<List<ErrorResponse>> defaultBadRequestError() {
         return new ResponseEntity<>(
-                Arrays.asList(ErrorResponse.builder()
+                Collections.singletonList(ErrorResponse.builder()
                         .code("400.000")
                         .message(getMessage("400.000"))
                         .build()),

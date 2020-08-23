@@ -3,18 +3,20 @@ package com.handson.beers.exception;
 import com.handson.beers.model.dto.ErrorResponse;
 import org.springframework.http.HttpStatus;
 
-
-import lombok.NoArgsConstructor;
-
-@NoArgsConstructor
 public class UnprocessableEntityException extends RestException {
 
-    private static final long serialVersionUID = 3980240545669347957L;
+    private static final long serialVersionUID = -6522585356980537304L;
 
-    private ErrorResponse errorResponseList;
+    private String responseBodyCode;
 
-    public UnprocessableEntityException(ErrorResponse errorResponseList) {
-        this.errorResponseList = errorResponseList;
+    private ErrorResponse responseBody;
+
+    public UnprocessableEntityException(String responseBodyCode) {
+        this.responseBodyCode = responseBodyCode;
+    }
+
+    public UnprocessableEntityException(ErrorResponse responseBody) {
+        this.responseBody = responseBody;
     }
 
     @Override
@@ -23,7 +25,13 @@ public class UnprocessableEntityException extends RestException {
     }
 
     @Override
-    public Object getBody() {
-        return errorResponseList;
+    public String getResponseBodyCode() {
+        return responseBodyCode;
     }
+
+    @Override
+    public ErrorResponse getResponseBody() {
+        return responseBody;
+    }
+
 }
