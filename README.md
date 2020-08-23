@@ -1,4 +1,4 @@
-| [Home](https://gabrielbabler.github.io/handson_microservice/) |  [Instalação](https://gabrielbabler.github.io/handson_microservice/instalacao) | [GIT](https://gabrielbabler.github.io/handson_microservice/git) | [Docker](https://gabrielbabler.github.io/handson_microservice/docker) | [Microservice](https://gabrielbabler.github.io/handson_microservice/microservice)
+| [Home](/) | [Instalação](/instalacao) | [GIT](/git) | [Docker](/docker) | [Microservice](/microservice)
 
 ![image](https://user-images.githubusercontent.com/20668748/90948106-92ff4000-e411-11ea-878e-d31ac8c36da7.png)
 
@@ -10,7 +10,7 @@ O Workshop está devidido em 4 grandes assuntos, sendo eles:
 
 - GIT;
 - Docker;
-- REST API;
+- REST APIs;
 - Microservices.
 
 Cada assunto tem sua página específica com o passo a passo para acompanhar o workshop.
