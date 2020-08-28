@@ -2,4 +2,4 @@
 
 # GIT / Comandos git com exemplos / commit  
 
-[Próxima seção: ](add.md)
+[Próxima seção:  GIT / Comandos git com exemplos / log](log.md)
