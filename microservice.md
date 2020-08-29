@@ -8,15 +8,15 @@
 
 ## O que é microserviço?
 
-[Introdução](what-is-microservice.md)
+[Introdução](microservice/what-is-microservice.md)
 
 ## O que iremos desenvolver?
 
-[TO-DOs](to-do.md)
+[TO-DOs](microservice/to-do.md)
 
 ## O que precisaremos?
 
-[TOOLS](tools.md)
+[TOOLS](microservice/tools.md)
 
 ## Como instalar?
-[Tutoriais](installation.md)
+[Tutoriais](microservice/installation.md)
