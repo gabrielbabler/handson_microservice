@@ -10,7 +10,7 @@ Gravando as mudanças dos arquivos ao longo do tempo, podemos ter salvo os difer
 
 
 ![esvers](https://user-images.githubusercontent.com/18057391/91788632-13c4f580-ebe3-11ea-8140-521cfc4dbadb.PNG)
-A imagem acima demonstra o sistema de versões do Elasticsearch. Para acessar o link [clique aqui](https://www.elastic.co/downloads/past-releases#elasticsearch). O Elasticsearch
+A imagem acima demonstra o sistema de versões do Elasticsearch. Para acessar o link [clique aqui](https://www.elastic.co/downloads/past-releases#elasticsearch).
 
 
 > Você pode usar GIT com praticamente qualquer tipo de arquivo em um computador. Utilizamos com arquivos de código fonte em projetos de software, mas nada impede de você versionar outros arquivos também.
@@ -18,7 +18,7 @@ A imagem acima demonstra o sistema de versões do Elasticsearch. Para acessar o 
 O software Elasticsearch por exemplo é desenvolvido [utilizando o GIT](https://github.com/elastic/elasticsearch). Atualmente o GIT é o software de versionamento mais utilizado do mundo.
 
 ![gitms](https://user-images.githubusercontent.com/18057391/91789252-a6b25f80-ebe4-11ea-8e3d-c12858cdb106.PNG)
-[Fonte: openhub/2020](https://www.openhub.net/repositories/compare).
+###### [Fonte: openhub/2020](https://www.openhub.net/repositories/compare).
 
 ## O que é GitHub?
 
