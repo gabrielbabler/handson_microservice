@@ -9,7 +9,7 @@ Como iremos desenvolver nosso projeto ao longo do tempo, uma das tarefas mais co
 
 ## O que é staging area? 
 
-Antes de criar `commits`, precisamos escolher os arquivos que farão parte dele. O `git` através da staging area será o local que manteremos os arquivos escolhidos para um a criação de commits.
+Antes de criar `commits`, precisamos escolher os arquivos que farão parte dele. O `git` através da `staging area` manterá os arquivos que escolhemos. Em um segundo momento, solicitaremos a criação do commit em si e o `git` utilizará o conteúdo da `staging area` para se basear.
 
 > Staging area também pode ser referenciada como `index`, `staged files`, `cache`. São essencialmente sinônimos.
 
@@ -20,7 +20,7 @@ Primeiramente precisamos ter arquivos no nosso repositório/projeto com algum co
 A partir desses arquivos, iremos “selecioná-los” para serem adicionados na `staging area`. Quando estivermos satisfeitos com o estado da `staging area`, iremos de fato pedir ao `git` que crie um commit.
 
 ![stagingarea1](https://user-images.githubusercontent.com/18057391/91795550-4fb48680-ebf4-11ea-8dc9-7376a03ea925.PNG)
-Na imagem acima temos a simbolizacao de 3 arquivos no nosso projeto e escolhemos que 2 para serem adicionados na `staging area`.
+Na imagem acima temos a simbolização de 3 arquivos no nosso projeto `(6)` e escolhemos que 2 para serem adicionados na `staging area` `(7)`.
 
 Em seguida, pediremos ao git para de fato criar um commit com o estado dos arquivos na `staging area`:
 
