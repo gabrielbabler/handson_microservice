@@ -6,16 +6,32 @@
   <img src="https://user-images.githubusercontent.com/18057391/90987285-2777b880-e560-11ea-988f-9e25d0d486d6.PNG" alt="instalacao" width="800px" />
 </h1>
 
-Para utilizar o docker no no Windows, é necessário que o sistema operacional seja a versão Professional ou Enterprise.
+Para utilizar o docker no Windows, é necessário que seu sistema operacional seja das versões Home, Education (Build 16299 or later), Professional ou Enterprise.<br  />
 
-Sendo assim basta baixar e instalar o docker Desktop, encontrado no link a seguir:
+> **Nota:** Durante o hands-on, utilizaremos o Windows Home Edition.<br  /> 
 
-https://hub.docker.com/editions/community/docker-ce-desktop-windows/
+### ** Recomenda-se os seguintes requisitos para sustentar o docker desktop no windows Home Edition:
+
+- Baixar e Instalar o pacote de atualização do kernel linux - (acesse o [link](https://docs.microsoft.com/pt-br/windows/wsl/wsl2-kernel) para mais detalhes)
+
+- Habilitar o recurso de WSL2 - (acesse o [link](https://docs.microsoft.com/en-us/windows/wsl/install-win10) para mais detalhes)
+
+- Suporte para virtualização da BIOS ativada - (acesse o [link](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled) para mais detalhes)
+
+- Processador de 64 bits (com [SLAT](https://en.wikipedia.org/wiki/Second_Level_Address_Translation))
+
+- 4GB de Memória<br  />
 
 
-Basta executar o instalador após baixá-lo e seguir com next, next finish. 
-Nenhuma configuração adicional será necessária para o hands on que faremos
+Sendo assim basta baixar e executar o instalador do docker Desktop, encontrado no link a seguir:<br  />
 
-Informações adicionais sobre docker desktop podem ser encontradas nestes link:
+https://docs.docker.com/docker-for-windows/install-windows-home/<br  />
+
+
+Nenhuma configuração adicional será necessária para o hands on que faremos<br  />
+
+Informações adicionais sobre docker desktop podem ser encontradas nestes link:<br  />
 
 https://docs.docker.com/docker-for-windows/
+
+
