@@ -81,7 +81,7 @@ Esse arquivo será utilizado no processo de `release` para gerar automaticamente
 
 Em seguida devemos também obter os arquivos iniciais do projeto que iremos desenvolver:
 
-[Faça o download desses arquivos (.zip)](handson_microservice/microservice-setup.zip)
+[Faça o download desses arquivos (.zip)](/handson_microservice/microservice-setup.zip)
 
 Após baixar o `.zip` acima, extraia e cole os arquivos no repositório seu.
 
