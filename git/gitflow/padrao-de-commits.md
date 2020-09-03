@@ -3,4 +3,4 @@
 # GIT / Git Flow / Padrão de commits
 
 
-[Próxima seção: GIT / Conclusão / Para onde vou?](../conclusao/para-onde-vou.md)
+[Próxima seção: GIT / Conclusão / Preparando para o projeto de microservice](../conclusao/preparando-para-o-projeto-de-microservice.md)

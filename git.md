@@ -24,21 +24,14 @@
 
 ### Comandos git com exemplos
 
+- [init](/git/comandos-git-com-exemplos/init.md)
 - [add](/git/comandos-git-com-exemplos/add.md)
-- [status](/git/comandos-git-com-exemplos/status.md)
 - [commit](/git/comandos-git-com-exemplos/commit.md)
 - [log](/git/comandos-git-com-exemplos/log.md)
-- [rebase](/git/comandos-git-com-exemplos/rebase.md)
-- [reset](/git/comandos-git-com-exemplos/reset.md)
-- [fetch](/git/comandos-git-com-exemplos/fetch.md)
+- [checkout](/git/comandos-git-com-exemplos/checkout.md)
 - [merge](/git/comandos-git-com-exemplos/merge.md)
+- [reset](/git/comandos-git-com-exemplos/reset.md)
 
-### Situações comuns do git 
-
-
-#### Arrependeu-se?
-- [Arrependi de ter feito o commit e ainda não enviei meu trabalho para o repositório remoto](/git/arrependeu-se/arrependi-de-ter-feito-o-commit-e-ainda-nao-enviei-meu-trabalho-para-o-repositorio-remoto.md)
-- [Tarde demais. Meu commit já foi enviada para o repositório remoto](/git/arrependeu-se/tarde-demais-meu-commit-ja-foi-enviado-para-o-repositorio-remoto.md)
 
 ### Git Flow
 
@@ -49,5 +42,5 @@
 
 ### Conclusão 
 
-- [Para onde vou?](/git/conclusao/para-onde-vou.md)
 - [Preparando para o projeto de Microservice](/git/conclusao/preparando-para-o-projeto-de-microservice.md)
+- [Para onde vou?](/git/conclusao/para-onde-vou.md)

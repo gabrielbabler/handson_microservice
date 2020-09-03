@@ -71,4 +71,4 @@ Date:   Wed Sep 2 21:24:32 2020 -0300
 
  Note que agora apareceu `no-meio-do-caminho.md` e a quantidade de linhas que foram adicionadas, simbolizado pelo mais "`+`" ou removidas, simbolizado pelo menos "`-`"
 
-[Próxima seção: GIT / Comandos git com exemplos / rebase](rebase.md)
+[Próxima seção: GIT / Comandos git com exemplos / checkout](checkout.md)

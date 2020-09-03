@@ -2,4 +2,5 @@
 
 # GIT / Comandos git com exemplos / merge
 
-[Próxima seção: GIT / Situações comuns do git / Arrependeu-se? / Exemplo 1](../arrependeu-se/arrependi-de-ter-feito-o-commit-e-ainda-nao-enviei-meu-trabalho-para-o-repositorio-remoto.md)
+
+[Próxima seção: GIT / Comandos git com exemplos / reset](reset.md)

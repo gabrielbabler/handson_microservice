@@ -2,4 +2,4 @@
 
 # GIT / Comandos git com exemplos / reset
 
-[Próxima seção: Comandos git com exemplos / fetch](fetch.md)
+[Próxima seção: Git Flow / O que é Git Flow](../gitflow/o-que-e-git-flow.md)
