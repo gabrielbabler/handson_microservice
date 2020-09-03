@@ -15,8 +15,8 @@
 ### Conceitos
 
 - [Repositório](/git/conceitos/repositorio.md)
-- [Commit](/git/conceitos/commit.md)
 - [Branch](/git/conceitos/branch.md)
+- [Commit](/git/conceitos/commit.md)
 
 ### Fluxo de trabalho "básico" em uma branch
 

@@ -31,4 +31,4 @@ Após a criação do commit, a staging area é limpa e podemos repetir o process
 
 Na próxima seção iremos ver na prática o uso dos conceitos explicados até agora.
 
-[Próxima seção: Comandos git com exemplos / add](../comandos-git-com-exemplos/init.md)
+[Próxima seção: Comandos git com exemplos / init](../comandos-git-com-exemplos/init.md)
