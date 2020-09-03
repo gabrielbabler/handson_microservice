@@ -38,7 +38,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Podemos verificar que o git sabe que existe o arquivo `no-meio-do-caminho.md`, mas ele que está `untracked`. Esse é o estado inicial de todos arquivos para o git e para prosseguirmos precisamos adicionar ele na `staging area`:
+Podemos verificar que o git sabe que existe o arquivo `no-meio-do-caminho.md`, mas ele está `untracked`. Esse é o estado inicial de todos arquivos para o git e para prosseguirmos precisamos adicionar ele na `staging area`:
 
 ```
 git add no-meio-do-caminho.md

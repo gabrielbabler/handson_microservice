@@ -37,10 +37,8 @@
 
 - [O que é Git Flow?](/git/gitflow/o-que-e-git-flow.md)
 - [Como trabalhar em um projeto com Git Flow](/git/gitflow/como-trabalhar-em-um-projeto-com-git-flow.md)
-- [Releases](/git/gitflow/releases.md)
 - [Padrão de commits](/git/gitflow/padrao-de-commits.md)
 
 ### Conclusão 
 
 - [Preparando para o projeto de Microservice](/git/conclusao/preparando-para-o-projeto-de-microservice.md)
-- [Para onde vou?](/git/conclusao/para-onde-vou.md)

@@ -2,7 +2,7 @@
 
 # GIT / Comandos git com exemplos / init
 
-Veremos na prática a utilização do git seus comandos, mas primeiramente necessitamos de ter de fato...`um repositório`.
+Veremos na prática a utilização do git e seus comandos, mas primeiramente necessitamos de ter de fato...`um repositório`.
 
 Para criá-lo, execute em uma pasta, por exemplo, com o nome `workshop-git` o comando abaixo:
 

@@ -3,4 +3,4 @@
 # GIT / Git Flow / Como trabalhar em um projeto com Git Flow
 
 
-[Próxima seção: GIT / Git Flow / Releases](releases.md)
+[Próxima seção: GIT / Git Flow / Padrão de Commits](padrao-de-commits.md)
