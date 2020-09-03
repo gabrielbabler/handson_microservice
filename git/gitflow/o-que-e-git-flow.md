@@ -2,5 +2,12 @@
 
 # GIT / Git Flow / O que é Git Flow?
 
+Gitflow Workflow é uma proposta de workflow de Git para padronizar o trabalho em um repositório de um projeto grande. O fluxo de trabalho Gitflow define um modelo de ramificação estrito que iremos ver com mais detalhes.
+
+Para entender melhor a proposta do Gitflow iremos configurar o projeto do `microservice` do 0 no GitHub.
+
+[Saiba mais sobre GitFlow - Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+
 
 [Próxima seção: GIT / Git Flow / Como trabalhar em um projeto com Git Flow](como-trabalhar-em-um-projeto-com-git-flow.md)
