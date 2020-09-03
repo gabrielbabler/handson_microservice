@@ -1,13 +1,16 @@
 package com.handson.beers.controller;
 
-import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("")
-@RequiredArgsConstructor
 public class BeerController {
+
+    Logger logger = LoggerFactory.getLogger(BeerController.class);
+
     /**
      * Verbo HTTP: GET
      * Nome do recurso: /beers

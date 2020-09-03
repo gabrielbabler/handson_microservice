@@ -1,10 +1,10 @@
 package com.handson.beers.service;
 
-import com.handson.beers.exception.UnprocessableEntityException;
-import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
 public class BeerService {
+    Logger logger = LoggerFactory.getLogger(BeerService.class);
 }
