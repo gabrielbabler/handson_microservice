@@ -10,4 +10,4 @@ Para entender melhor a proposta do Gitflow iremos configurar o projeto do `micro
 
 
 
-[Próxima seção: GIT / Git Flow / Como trabalhar em um projeto com Git Flow](como-trabalhar-em-um-projeto-com-git-flow.md)
+[Próxima seção: GIT / Git Flow / Padrão de commits](padrao-de-commits.md)
