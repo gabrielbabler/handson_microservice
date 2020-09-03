@@ -35,7 +35,6 @@
 ### Git Flow
 
 - [O que é Git Flow?](/git/gitflow/o-que-e-git-flow.md)
-- [Como trabalhar em um projeto com Git Flow](/git/gitflow/como-trabalhar-em-um-projeto-com-git-flow.md)
 - [Padrão de commits](/git/gitflow/padrao-de-commits.md)
 
 ### Conclusão 
