@@ -2,7 +2,7 @@
 
 # GIT / Git Flow / Padrão de commits
 
-O padrão de commits não faz parte diretamente do Gitflow, mas utilizaremos nesse projeto o padrão de `Conventional Commits`, pois eles nos ajudaram a criar um `CHANGELOG.md` automaticamente através da história de `commits` do próprio desenvolvimento.
+O padrão de commits não faz parte diretamente do Gitflow, mas utilizaremos nesse projeto o padrão de [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), pois eles nos ajudaram a criar um `CHANGELOG.md` automaticamente através da história de `commits` do próprio desenvolvimento.
 
 ## O que é `CHANGELOG.md`?
 

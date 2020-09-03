@@ -30,7 +30,6 @@
 - [log](/git/comandos-git-com-exemplos/log.md)
 - [checkout](/git/comandos-git-com-exemplos/checkout.md)
 - [merge](/git/comandos-git-com-exemplos/merge.md)
-- [reset](/git/comandos-git-com-exemplos/reset.md)
 
 
 ### Git Flow
