@@ -92,7 +92,7 @@ git add .
 git commit -m "Add initial setup project"
 ```
 
-Após isso iremos enviar nova `branch` chamada `chore/configure-project-setup` para o GitHub:
+Após isso iremos enviar a nova `branch` chamada `chore/configure-project-setup` para o GitHub:
 
 ```
 git push origin chore/configure-project-setup
@@ -100,13 +100,45 @@ git push origin chore/configure-project-setup
 
 # 6. Criando a primeira Pull Request do nosso trabalho
 
-Após trabalharmos na branch `chore/configure-project-setup` iremos fazer uma solicitação para nossas alterações serem adicionadas na branch `develop`.
+Após trabalharmos na branch `chore/configure-project-setup` no ambiente local, iremos fazer uma solicitação para nossas alterações serem adicionadas na branch `develop`.
+
+Para isso, no GitHub ao atualizarmos a pagina podemos verificar que uma nova opcao foi adicionada para **criar um Pull Request**:
+
+> O GitHub automaticamente reconhece que uma branch foi enviada e sugere a criacao de um Pull Request
+
+Clique em **Compare & Pull Request**:
+![githubpr](https://user-images.githubusercontent.com/18057391/92297514-8cdf8800-ef16-11ea-9b8e-e0f600e02c5e.png)
+
+Nessa etapa iremos propor a adicao de nossas alteracoes na linha principal de desenvolvimento, isto e, a branch `develop`.
+![2](https://user-images.githubusercontent.com/18057391/92297560-e21b9980-ef16-11ea-94db-47db2d912ce8.PNG)
+
+> Geralmente adicionamos o maximo possivel de contextualizacao para as pessoas que revisarem nossas alteracoes possam ter ideia sobre o que de fato queremos fazer e se nossa abordagem faz sentido para o projeto.
+
+Em seguida clique em **Create pull request**.
+
+Apos um processo de revisao sobre a Pull Request que eventualmente teria em um projeto com mais desenvolvedores, poderiamos enfim "mergear" nossas alteracoes na "develop". No nosso caso iremos considerar que nossa alteracao nao necessita de avaliacao (simularemos apenas o processo de Pull Request).
+
+Nesse momento devemos nos atentar a forma como iremos fazer isso, pois queremos seguir um padrao de commit para nos ajudar na criacao da documentacao nos proximo processo.
+
+![3](https://user-images.githubusercontent.com/18057391/92297596-4e969880-ef17-11ea-8f4d-7e7da2b2d0a7.PNG)
+
+Para tanto, escolha a opcao "Squash and merge" ao inves da opcao padrao sempre que for `mergear` na `develop`, pois assim voce garante uma linha do tempo mais resumida. O GitHub automaticamente ira unir varios commits da sua branch de origem em apenas um commit caso tenha varios. No nosso exemplo fizemos apenas 1 commit, mas poderiamos ter feito varios testes com commits deixando essa branch mais "cheia".
+
+Atente-se ao padrao que o **Conventional Commits** necessita, sempre o commit tendo um "grupo" e uma mensagem. No nosso caso poderiamos utilizar como commit a mensagem abaixo:
+
+```
+chore: Add initial setup project (#1)
+```
+
+![4](https://user-images.githubusercontent.com/18057391/92297634-d2e91b80-ef17-11ea-9f2b-c88a17c0e194.PNG)
+
+Feito a criacao da mensagem do commit conforme o padrao, clique em "Confirm squash and merge". Essa acao ira integrar suas alteracoes na branch `develop`.
 
 # 7. Criando a release 0.1.0
 
-A partir do momento que temos a branch `develop` com o trabalho que queremos, no caso, o `setup inicial do projeto`, iremos criar uma branch de release:
+A partir do momento que temos a branch `develop` com o trabalho que queremos, no caso, o `setup inicial do projeto`, iremos criar uma branch de release simulando a criacao de uma versao inicial no desenvolvimento:
 
-> Antes de criar a branch da develop, lembre-se de fazer git pull para que as alterações mais recentes sejam baixadas no seu computador.
+> Antes de criar a branch da develop, lembre-se de fazer git pull para que as alterações mais recentes sejam baixadas no seu computador, visto que realizamos o merge pelo GitHub.
 
 ```
 git pull develop
@@ -138,6 +170,8 @@ Como queremos gerar a versão 0.1.0, devemos usar o comando como abaixo:
 standard-version --dry-run --release-as 0.1.0
 ```
 
+Lembra que criamos o arquivo `.versionrc` anteriormente? Esse gerador `standard-version` cria as secoes no `CHANGELOG.md` com base nas definicioes de `.versionrc`.
+
 > dry-run evita que o arquivo seja de fato criado, apenas serve para nos mostrar como seria de fato a execução em si do programa.
 
 Podemos executar a geração do `CHANGELOG.md` e consequentemente gerar uma `tag` no repositório:
@@ -146,14 +180,47 @@ Podemos executar a geração do `CHANGELOG.md` e consequentemente gerar uma `tag
 standard-version --release-as 0.1.0
 ```
 
-> Uma tag é simplesmente um nome que podemos dar para um commit, no caso a própria ferramenta standard-version criará para nós a tag.
+> Uma tag é simplesmente um nome que podemos associar para um commit, no caso a própria ferramenta standard-version criará para nós a tag v0.1.0 que podera ser utilizada para encontrar facilmente a versao lancada no GitHub.
 
-Em seguida podemos verificar que um commit foi criado pela ferramenta, concluindo nosso processo de exemplo de release.
+Em seguida podemos verificar que um commit foi criado pela ferramenta atraves de `git log`, concluindo nosso processo de exemplo de release.
 
-Podemos enviar nossas alterações para o repositório no GitHub e criar um Pull Request para a `master`:
+Podemos enviar nossas alterações para o repositório no GitHub e criar um Pull Request para a `master`, processo similar ao primeiro Pull Request do setup inicial:
 
 ```
-git push origin release/0.1.0
+git push --follow-tags origin release/0.1.0
 ```
 
-> Não podemos nos esquecer de atualizar a `develop` após fazer o merge da master pois criamos o `CHANGELOG.md` 
+Com as alteracoes no Github, selecionamos **Compare & pull request** para a branch de **release/0.1.0**:
+
+![5](https://user-images.githubusercontent.com/18057391/92297727-9538c280-ef18-11ea-8c57-36d3ed8613e6.PNG)
+
+Note que a branch alvo nao deve ser a develop no momento e sim a `master`. Iremos atualizar a develop apos o merge na `master` para que o proximo ciclo de desenvolvimento possa ser baseado na ultima versao criada.
+
+![6](https://user-images.githubusercontent.com/18057391/92297763-eea0f180-ef18-11ea-8578-4cb4a2674f6a.PNG)
+
+
+Devemos selecionar a opcao de `squash` e resumir o que esse Pull Request se propoe.
+![7](https://user-images.githubusercontent.com/18057391/92297801-56efd300-ef19-11ea-977f-f905d08f4fb4.PNG)
+
+Apos isso, clique em `Confirm squash and merge`.
+
+Fizemos um processo de criar release, mas ate o momento essa alteracao nao esta na develop...Não podemos nos esquecer de atualizar a `develop` após fazer o merge da master pois criamos o `CHANGELOG.md`!
+
+Ainda no GitHub, crie um Pull Request conforme a imagem abaixo:
+
+![8](https://user-images.githubusercontent.com/18057391/92297863-e1383700-ef19-11ea-8354-1da666bf443f.PNG)
+
+Nesse Pull Request iremos selecionar a branch alvo como "develop" e a origem como a release "0.1.0"
+
+![9](https://user-images.githubusercontent.com/18057391/92297879-0c228b00-ef1a-11ea-802b-fffb9c2e4ef4.PNG)
+
+Adicione um resumo da proposta do Pull Request conforme o exemplo abaixo e clique em "Create Pull Request":
+![10](https://user-images.githubusercontent.com/18057391/92297885-2bb9b380-ef1a-11ea-864f-6f977052bb3e.PNG)
+
+Apos isso, com o Pull Request criado, faca o merge com a opcao de "squash" como temos feito sempre:
+
+![11](https://user-images.githubusercontent.com/18057391/92297910-66235080-ef1a-11ea-8566-02dd70410bd0.PNG)
+
+Por fim, realizamos um ciclo de geracao de versao e no momento nossa branch develop esta atualizada para continuarmos o desenvolvimento :)
+
+Nos proximos dias iremos continuar o desenvolvimento do projeto a partir da develop atualizada com a v0.1.0 :)
