@@ -1,47 +1,111 @@
 package com.handson.beers.controller;
 
+import com.handson.beers.model.dto.BeerRequest;
+import com.handson.beers.model.dto.BeerResponse;
+import com.handson.beers.service.BeerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import java.util.List;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("/beers")
 public class BeerController {
 
     Logger logger = LoggerFactory.getLogger(BeerController.class);
+
+    private final BeerService beerService;
+
+    public BeerController(BeerService beerService) {
+        this.beerService = beerService;
+    }
 
     /**
      * Verbo HTTP: GET
      * Nome do recurso: /beers
      * Responsabilidade: Trazer todas as cervejas salvas na base de dados.
      */
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    public List<BeerResponse> getAll() {
+        return beerService.getAllBeers();
+    }
 
     /**
      * Verbo HTTP: GET
      * Nome do recurso: /beers/{beer-id}
      * Responsabilidade: Trazer uma determinada cerveja através do seu ID.
      */
+    @GetMapping("/{beer-id}")
+    @ResponseStatus(HttpStatus.OK)
+    public BeerResponse getById(
+            @PathVariable(name = "beer-id") Integer beerId) {
+        return beerService.getById(beerId);
+    }
 
     /**
      * Verbo HTTP: POST
      * Nome do recurso: /beers
      * Responsabilidade: Inserir uma nova cerveja no banco de dados.
      */
+    @PostMapping
+    public ResponseEntity<Void> createNewBeer(
+            @RequestBody BeerRequest request,
+            UriComponentsBuilder builder) {
+        Integer newBeerId = beerService.createNewBeer(request);
+
+        return ResponseEntity.created(builder.path("/beers/{beer-id}").buildAndExpand(newBeerId).toUri()).build();
+    }
 
     /**
      * Verbo HTTP: PUT
      * Nome do recurso: /beers/{beer-id}
      * Responsabilidade: Atualizar todas as informações de uma determinada cerveja.
      */
+    @PutMapping("/{beer-id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void updateBeer(
+            @RequestBody BeerRequest request,
+            @PathVariable(name = "beer-id") Integer beerId) {
+        beerService.updateBeer(request, beerId);
+    }
 
     /**
      * Verbo HTTP: DELETE
-     * Nome do recurso: /beers/{beerd-id}
+     * Nome do recurso: /beers/{beer-id}
      * Responsabilidade: Deletar uma cerveja a partir de seu identificador da base de dados.
      */
+    @DeleteMapping("/{beer-id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteBeerById(
+            @PathVariable(name="beer-id") Integer beerId) {
+        beerService.deleteBeerById(beerId);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     // ****************** DESAFIOS **********************  //
 

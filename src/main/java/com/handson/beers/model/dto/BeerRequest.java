@@ -17,9 +17,6 @@ public class BeerRequest {
         this.type = type;
     }
 
-    public BeerRequest() {
-    }
-
     public String getName() {
         return name;
     }
